@@ -31,8 +31,8 @@
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 5,
-          center: {lat: 24.886, lng: -70.268},
+          zoom: 9,
+          center: {lat: 4.737751, lng: -74.3674284},
           mapTypeId: 'terrain'
         });
 //4.737751,-74.3674284
@@ -51,15 +51,19 @@
           strokeColor: '#FF0000',
           strokeOpacity: 0.8,
           strokeWeight: 3,
-          fillColor: '#FF0000',
-          fillOpacity: 0.35
+          fillColor: '#194D33',
+          fillOpacity:0.5
         });
         bermudaTriangle.setMap(map);
+
 
         // Add a listener for the click event.
         bermudaTriangle.addListener('click', showArrays);
 
         infoWindow = new google.maps.InfoWindow;
+
+
+
       }
 
       /** @this {google.maps.Polygon} */
@@ -68,7 +72,7 @@
         // MVCArray of LatLngs.
         var vertices = this.getPath();
 
-        var contentString = '<b>Bermuda Triangle polygon</b><br>' +
+        var contentString = '<b>te amo mucho </b><br>' +
             'Clicked location: <br>' + event.latLng.lat() + ',' + event.latLng.lng() +
             '<br>';
 
